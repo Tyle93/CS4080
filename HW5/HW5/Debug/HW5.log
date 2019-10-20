@@ -1,0 +1,9 @@
+﻿  Source.cpp
+E:\Projects\CS4080\HW5\HW5\Source.cpp(46,20): warning C4018:  '<': signed/unsigned mismatch
+E:\Projects\CS4080\HW5\HW5\Source.cpp(52,20): warning C4018:  '<': signed/unsigned mismatch
+E:\Projects\CS4080\HW5\HW5\Source.cpp(58,20): warning C4018:  '<': signed/unsigned mismatch
+E:\Projects\CS4080\HW5\HW5\Source.cpp(78,19): warning C4018:  '<': signed/unsigned mismatch
+E:\Projects\CS4080\HW5\HW5\Source.cpp(81,21): warning C4018:  '<': signed/unsigned mismatch
+E:\Projects\CS4080\HW5\HW5\Source.cpp(121,20): warning C4018:  '<': signed/unsigned mismatch
+E:\Projects\CS4080\HW5\HW5\Source.cpp(124,21): warning C4018:  '<': signed/unsigned mismatch
+  HW5.vcxproj -> E:\Projects\CS4080\HW5\Debug\HW5.exe
