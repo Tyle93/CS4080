@@ -1,0 +1,7 @@
+﻿  Main.cpp
+E:\Projects\CS4080\HW4_ADT\HW4_ADT\Matrix.h(58,1): error C2087:  'arr': missing subscript
+E:\Projects\CS4080\HW4_ADT\HW4_ADT\Main.cpp(18): message :  see reference to class template instantiation 'Matrix<std::string>' being compiled
+E:\Projects\CS4080\HW4_ADT\HW4_ADT\Main.cpp(18,113): error C2440:  'initializing': cannot convert from 'initializer list' to 'Matrix<std::string>'
+  Matrix.cpp
+  Generating Code...
+E:\Projects\CS4080\HW4_ADT\HW4_ADT\Main.cpp(18,113): message :  No constructor could take the source type, or constructor overload resolution was ambiguous
