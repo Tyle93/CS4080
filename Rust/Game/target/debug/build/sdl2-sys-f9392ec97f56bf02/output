@@ -1,0 +1,419 @@
+running: "cmake" "E:\\Projects\\CS4080\\Rust\\Game\\target\\debug\\build\\sdl2-sys-f9392ec97f56bf02\\out\\SDL2-2.0.9" "-G" "Visual Studio 16 2019" "-Thost=x64" "-Ax64" "-DSDL_SHARED=OFF" "-DSDL_STATIC=ON" "-DCMAKE_INSTALL_PREFIX=E:\\Projects\\CS4080\\Rust\\Game\\target\\debug\\build\\sdl2-sys-f9392ec97f56bf02\\out" "-DCMAKE_C_FLAGS= -nologo -MD -Brepro" "-DCMAKE_C_FLAGS_RELEASE= -nologo -MD -Brepro" "-DCMAKE_CXX_FLAGS= -nologo -MD -Brepro" "-DCMAKE_CXX_FLAGS_RELEASE= -nologo -MD -Brepro" "-DCMAKE_BUILD_TYPE=release"
+-- Selecting Windows SDK version 10.0.17763.0 to target Windows 10.0.18362.
+-- The C compiler identification is MSVC 19.21.27702.2
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/Hostx64/x64/cl.exe
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/Hostx64/x64/cl.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- 0.9.0 :: 9 :: 0 :: 9 :: 2.0
+-- Performing Test HAVE_WIN32_CC
+-- Performing Test HAVE_WIN32_CC - Success
+-- Performing Test HAVE_XINPUT_H
+-- Performing Test HAVE_XINPUT_H - Success
+-- Performing Test HAVE_XINPUT_GAMEPAD_EX
+-- Performing Test HAVE_XINPUT_GAMEPAD_EX - Failed
+-- Performing Test HAVE_XINPUT_STATE_EX
+-- Performing Test HAVE_XINPUT_STATE_EX - Failed
+-- Looking for d3d9.h
+-- Looking for d3d9.h - found
+-- Looking for d3d11_1.h
+-- Looking for d3d11_1.h - found
+-- Looking for ddraw.h
+-- Looking for ddraw.h - found
+-- Looking for dsound.h
+-- Looking for dsound.h - found
+-- Looking for dinput.h
+-- Looking for dinput.h - found
+-- Looking for dxgi.h
+-- Looking for dxgi.h - found
+-- Looking for mmdeviceapi.h
+-- Looking for mmdeviceapi.h - found
+-- Looking for audioclient.h
+-- Looking for audioclient.h - found
+-- Looking for endpointvolume.h
+-- Looking for endpointvolume.h - found
+-- 
+-- SDL2 was configured with the following options:
+-- 
+-- Platform: Windows-10.0.18362
+-- 64-bit:   TRUE
+-- Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/Hostx64/x64/cl.exe
+-- 
+-- Subsystems:
+--   Atomic:	ON
+--   Audio:	ON
+--   Video:	ON
+--   Render:	ON
+--   Events:	ON
+--   Joystick:	ON
+--   Haptic:	ON
+--   Power:	ON
+--   Threads:	ON
+--   Timers:	ON
+--   File:	ON
+--   Loadso:	ON
+--   CPUinfo:	ON
+--   Filesystem:	ON
+--   Dlopen:	ON
+--   Sensor:	ON
+-- 
+-- Options:
+--   3DNOW                  (Wanted: ON): OFF
+--   ALSA                   (Wanted: OFF): OFF
+--   ALSA_SHARED            (Wanted: OFF): OFF
+--   ALTIVEC                (Wanted: ON): OFF
+--   ARTS                   (Wanted: OFF): OFF
+--   ARTS_SHARED            (Wanted: OFF): OFF
+--   ASSEMBLY               (Wanted: ON): OFF
+--   ASSERTIONS             (Wanted: auto): auto
+--   CLOCK_GETTIME          (Wanted: OFF): OFF
+--   DIRECTFB_SHARED        (Wanted: OFF): OFF
+--   DIRECTX                (Wanted: ON): ON
+--   DISKAUDIO              (Wanted: ON): ON
+--   DUMMYAUDIO             (Wanted: ON): ON
+--   ESD                    (Wanted: OFF): OFF
+--   ESD_SHARED             (Wanted: OFF): OFF
+--   FUSIONSOUND            (Wanted: OFF): OFF
+--   FUSIONSOUND_SHARED     (Wanted: OFF): OFF
+--   GCC_ATOMICS            (Wanted: OFF): OFF
+--   INPUT_TSLIB            (Wanted: OFF): OFF
+--   JACK                   (Wanted: OFF): OFF
+--   JACK_SHARED            (Wanted: OFF): OFF
+--   KMSDRM_SHARED          (Wanted: OFF): OFF
+--   LIBC                   (Wanted: OFF): OFF
+--   LIBSAMPLERATE          (Wanted: OFF): OFF
+--   LIBSAMPLERATE_SHARED   (Wanted: OFF): OFF
+--   MIR_SHARED             (Wanted: OFF): OFF
+--   MMX                    (Wanted: ON): OFF
+--   NAS                    (Wanted: OFF): OFF
+--   NAS_SHARED             (Wanted: OFF): OFF
+--   OSS                    (Wanted: OFF): OFF
+--   PTHREADS               (Wanted: OFF): OFF
+--   PTHREADS_SEM           (Wanted: OFF): OFF
+--   PULSEAUDIO             (Wanted: OFF): OFF
+--   PULSEAUDIO_SHARED      (Wanted: OFF): OFF
+--   RENDER_D3D             (Wanted: ON): ON
+--   RPATH                  (Wanted: OFF): OFF
+--   SDL_DLOPEN             (Wanted: ON): OFF
+--   SDL_STATIC_PIC         (Wanted: OFF): OFF
+--   SDL_TEST               (Wanted: OFF): OFF
+--   SNDIO                  (Wanted: OFF): OFF
+--   SSE                    (Wanted: ON): ON
+--   SSE2                   (Wanted: ON): ON
+--   SSE3                   (Wanted: ON): ON
+--   SSEMATH                (Wanted: ON): OFF
+--   VIDEO_COCOA            (Wanted: OFF): OFF
+--   VIDEO_DIRECTFB         (Wanted: OFF): OFF
+--   VIDEO_DUMMY            (Wanted: ON): ON
+--   VIDEO_KMSDRM           (Wanted: OFF): OFF
+--   VIDEO_MIR              (Wanted: OFF): OFF
+--   VIDEO_OPENGL           (Wanted: ON): ON
+--   VIDEO_OPENGLES         (Wanted: ON): ON
+--   VIDEO_RPI              (Wanted: OFF): OFF
+--   VIDEO_VIVANTE          (Wanted: OFF): OFF
+--   VIDEO_VULKAN           (Wanted: ON): ON
+--   VIDEO_WAYLAND          (Wanted: OFF): OFF
+--   VIDEO_WAYLAND_QT_TOUCH (Wanted: OFF): OFF
+--   VIDEO_X11              (Wanted: OFF): OFF
+--   VIDEO_X11_XCURSOR      (Wanted: OFF): OFF
+--   VIDEO_X11_XINERAMA     (Wanted: OFF): OFF
+--   VIDEO_X11_XINPUT       (Wanted: OFF): OFF
+--   VIDEO_X11_XRANDR       (Wanted: OFF): OFF
+--   VIDEO_X11_XSCRNSAVER   (Wanted: OFF): OFF
+--   VIDEO_X11_XSHAPE       (Wanted: OFF): OFF
+--   VIDEO_X11_XVM          (Wanted: OFF): OFF
+--   WASAPI                 (Wanted: ON): OFF
+--   WAYLAND_SHARED         (Wanted: OFF): OFF
+--   X11_SHARED             (Wanted: OFF): OFF
+-- 
+--  CFLAGS:         -nologo -MD -Brepro
+--  EXTRA_CFLAGS:  
+--  EXTRA_LDFLAGS: 
+--  EXTRA_LIBS:    user32;gdi32;winmm;imm32;ole32;oleaut32;version;uuid;advapi32;shell32;dinput8
+-- 
+--  Build Shared Library: OFF
+--  Build Static Library: ON
+--  Build Static Library with Position Independent Code: OFF
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/build
+running: "cmake" "--build" "." "--target" "install" "--config" "release" "--"
+Microsoft (R) Build Engine version 16.1.76+g14b0a930a7 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Checking Build System
+  Building Custom Rule E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/SDL2-2.0.9/CMakeLists.txt
+  SDL.c
+  SDL_assert.c
+  SDL_dataqueue.c
+  SDL_error.c
+  SDL_hints.c
+  SDL_log.c
+  SDL_atomic.c
+  SDL_spinlock.c
+  SDL_audio.c
+  SDL_audiocvt.c
+  SDL_audiodev.c
+  SDL_audiotypecvt.c
+  SDL_mixer.c
+  SDL_wave.c
+  SDL_cpuinfo.c
+  SDL_dynapi.c
+  SDL_clipboardevents.c
+  SDL_displayevents.c
+  SDL_dropevents.c
+  SDL_events.c
+  Generating Code...
+  Compiling...
+  SDL_gesture.c
+  SDL_keyboard.c
+  SDL_mouse.c
+  SDL_quit.c
+  SDL_touch.c
+  SDL_windowevents.c
+  SDL_rwops.c
+  e_atan2.c
+  e_exp.c
+  e_fmod.c
+  e_log.c
+  e_log10.c
+  e_pow.c
+  e_rem_pio2.c
+  e_sqrt.c
+  k_cos.c
+  k_rem_pio2.c
+  k_sin.c
+  k_tan.c
+  s_atan.c
+  Generating Code...
+  Compiling...
+  s_copysign.c
+  s_cos.c
+  s_fabs.c
+  s_floor.c
+  s_scalbn.c
+  s_sin.c
+  s_tan.c
+  SDL_d3dmath.c
+  SDL_render.c
+  SDL_yuv_sw.c
+  SDL_render_d3d.c
+  SDL_shaders_d3d.c
+  SDL_render_d3d11.c
+  SDL_shaders_d3d11.c
+  SDL_render_gl.c
+  SDL_shaders_gl.c
+  SDL_render_gles.c
+  SDL_render_gles2.c
+  SDL_shaders_gles2.c
+  SDL_render_psp.c
+  Generating Code...
+  Compiling...
+  SDL_blendfillrect.c
+  SDL_blendline.c
+  SDL_blendpoint.c
+  SDL_drawline.c
+  SDL_drawpoint.c
+  SDL_render_sw.c
+  SDL_rotate.c
+  SDL_getenv.c
+  SDL_iconv.c
+  SDL_malloc.c
+  SDL_qsort.c
+  SDL_stdlib.c
+  SDL_string.c
+  SDL_thread.c
+  SDL_timer.c
+  SDL_RLEaccel.c
+  SDL_blit.c
+  SDL_blit_0.c
+  SDL_blit_1.c
+  SDL_blit_A.c
+  Generating Code...
+  Compiling...
+  SDL_blit_N.c
+  SDL_blit_auto.c
+  SDL_blit_copy.c
+  SDL_blit_slow.c
+  SDL_bmp.c
+  SDL_clipboard.c
+  SDL_egl.c
+  SDL_fillrect.c
+  SDL_pixels.c
+  SDL_rect.c
+  SDL_shape.c
+  SDL_stretch.c
+  SDL_surface.c
+  SDL_video.c
+  SDL_vulkan_utils.c
+  SDL_yuv.c
+  yuv_rgb.c
+  SDL_gamecontroller.c
+  SDL_joystick.c
+  SDL_haptic.c
+  Generating Code...
+  Compiling...
+  SDL_sensor.c
+  SDL_power.c
+  SDL_dummyaudio.c
+  SDL_diskaudio.c
+  SDL_nullevents.c
+  SDL_nullframebuffer.c
+  SDL_nullvideo.c
+  SDL_windows.c
+  SDL_xinput.c
+  SDL_winmm.c
+  SDL_directsound.c
+  SDL_wasapi.c
+  SDL_wasapi_win32.c
+  SDL_windowsclipboard.c
+  SDL_windowsevents.c
+  SDL_windowsframebuffer.c
+  SDL_windowskeyboard.c
+  SDL_windowsmessagebox.c
+  SDL_windowsmodes.c
+  SDL_windowsmouse.c
+  Generating Code...
+  Compiling...
+  SDL_windowsopengl.c
+  SDL_windowsopengles.c
+  SDL_windowsshape.c
+  SDL_windowsvideo.c
+  SDL_windowsvulkan.c
+  SDL_windowswindow.c
+  SDL_sysmutex.c
+  SDL_syssem.c
+  SDL_systhread.c
+  SDL_systls.c
+  SDL_syscond.c
+  SDL_syspower.c
+  SDL_sysfilesystem.c
+  SDL_systimer.c
+  SDL_sysloadso.c
+  SDL_dinputjoystick.c
+  SDL_mmjoystick.c
+  SDL_windowsjoystick.c
+  SDL_xinputjoystick.c
+  SDL_dinputhaptic.c
+  Generating Code...
+  Compiling...
+  SDL_windowshaptic.c
+  SDL_xinputhaptic.c
+  SDL_dummysensor.c
+  Generating Code...
+  SDL2-static.vcxproj -> E:\Projects\CS4080\Rust\Game\target\debug\build\sdl2-sys-f9392ec97f56bf02\out\build\Release\SDL2.lib
+  Building Custom Rule E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/SDL2-2.0.9/CMakeLists.txt
+  SDL_windows_main.c
+  SDL2main.vcxproj -> E:\Projects\CS4080\Rust\Game\target\debug\build\sdl2-sys-f9392ec97f56bf02\out\build\Release\SDL2main.lib
+  Building Custom Rule E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/SDL2-2.0.9/CMakeLists.txt
+  -- Install configuration: "release"
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/lib/SDL2.lib
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/lib/SDL2main.lib
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/cmake/SDL2Targets.cmake
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/cmake/SDL2Targets-release.cmake
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/cmake/SDL2Config.cmake
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/cmake/SDL2ConfigVersion.cmake
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_assert.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_atomic.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_audio.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_bits.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_blendmode.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_clipboard.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_config_android.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_config_iphoneos.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_config_macosx.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_config_minimal.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_config_os2.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_config_pandora.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_config_psp.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_config_windows.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_config_winrt.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_config_wiz.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_copying.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_cpuinfo.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_egl.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_endian.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_error.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_events.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_filesystem.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_gamecontroller.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_gesture.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_haptic.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_hints.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_joystick.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_keyboard.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_keycode.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_loadso.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_log.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_main.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_messagebox.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_mouse.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_mutex.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_name.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_opengl.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_opengl_glext.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_opengles.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_opengles2.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_opengles2_gl2.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_opengles2_gl2ext.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_opengles2_gl2platform.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_opengles2_khrplatform.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_pixels.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_platform.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_power.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_quit.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_rect.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_render.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_revision.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_rwops.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_scancode.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_sensor.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_shape.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_stdinc.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_surface.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_system.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_syswm.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_assert.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_common.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_compare.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_crc32.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_font.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_fuzzer.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_harness.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_images.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_log.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_md5.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_memory.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_test_random.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_thread.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_timer.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_touch.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_types.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_version.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_video.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_vulkan.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/begin_code.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/close_code.h
+  -- Installing: E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/include/SDL2/SDL_config.h
+cargo:root=E:\Projects\CS4080\Rust\Game\target\debug\build\sdl2-sys-f9392ec97f56bf02\out
+cargo:rustc-link-search=E:\Projects\CS4080\Rust\Game\target\debug\build\sdl2-sys-f9392ec97f56bf02\out\lib
+cargo:rustc-link-lib=static=SDL2main
+cargo:rustc-link-lib=static=SDL2
+cargo:rustc-link-lib=shell32
+cargo:rustc-link-lib=user32
+cargo:rustc-link-lib=gdi32
+cargo:rustc-link-lib=winmm
+cargo:rustc-link-lib=imm32
+cargo:rustc-link-lib=ole32
+cargo:rustc-link-lib=oleaut32
+cargo:rustc-link-lib=version
+cargo:rustc-link-lib=uuid
+cargo:rustc-link-lib=dinput8
+cargo:rustc-link-lib=dxguid
+cargo:rustc-link-lib=setupapi

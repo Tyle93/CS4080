@@ -15,7 +15,7 @@ int main(){
     std::chrono::duration<double, std::milli> elapsed;
     begin = getTime();
     for(int i = 0; i < 1000; i++){
-        r.area();
+        s.area();
     }
     end = getTime();
     elapsed = end - begin;
@@ -32,6 +32,5 @@ int main(){
 }
 
 std::chrono::high_resolution_clock::time_point getTime(){
-    //return std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
-    return std::chrono::high_resolution_clock().now();
+        return std::chrono::high_resolution_clock().now();
 }

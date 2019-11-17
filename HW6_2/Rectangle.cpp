@@ -6,11 +6,6 @@ Rectangle::Rectangle(int width, int height)
     this->height = height;
 }
 
-Rectangle::~Rectangle()
-{
-
-}
-
 int Rectangle::area()
 {
     return width*height;

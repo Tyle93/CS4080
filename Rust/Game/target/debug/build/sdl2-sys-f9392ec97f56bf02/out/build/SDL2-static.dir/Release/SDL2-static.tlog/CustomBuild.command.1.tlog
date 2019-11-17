@@ -1,0 +1,10 @@
+^E:\PROJECTS\CS4080\RUST\GAME\TARGET\DEBUG\BUILD\SDL2-SYS-F9392EC97F56BF02\OUT\SDL2-2.0.9\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/SDL2-2.0.9 -BE:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/build --check-stamp-file E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

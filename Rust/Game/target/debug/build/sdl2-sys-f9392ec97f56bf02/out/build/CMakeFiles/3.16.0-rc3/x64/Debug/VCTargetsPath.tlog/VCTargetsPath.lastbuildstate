@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v142:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native64Bit:WindowsTargetPlatformVersion=10.0.17763.0
+Debug|x64|E:\Projects\CS4080\Rust\Game\target\debug\build\sdl2-sys-f9392ec97f56bf02\out\build\CMakeFiles\3.16.0-rc3\|

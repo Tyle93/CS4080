@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Projects\CS4080\Rust\Game\target\debug\build\sdl2-sys-f9392ec97f56bf02\out\build\CMakeFiles\ac0d1906933f4bf2c88e703f822e8007\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\Projects\CS4080\Rust\Game\target\debug\build\sdl2-sys-f9392ec97f56bf02\out\SDL2-2.0.9\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\Projects\CS4080\Rust\Game\target\debug\build\sdl2-sys-f9392ec97f56bf02\out\build\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{16F70518-8FB5-3D4C-808C-63CF821DF0AB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

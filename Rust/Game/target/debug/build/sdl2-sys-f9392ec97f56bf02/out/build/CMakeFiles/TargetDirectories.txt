@@ -1,0 +1,6 @@
+E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/build/CMakeFiles/SDL2-static.dir
+E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/build/CMakeFiles/SDL2main.dir
+E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/build/CMakeFiles/uninstall.dir
+E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/build/CMakeFiles/INSTALL.dir
+E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/build/CMakeFiles/ALL_BUILD.dir
+E:/Projects/CS4080/Rust/Game/target/debug/build/sdl2-sys-f9392ec97f56bf02/out/build/CMakeFiles/ZERO_CHECK.dir

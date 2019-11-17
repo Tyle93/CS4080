@@ -1,4 +1,3 @@
-use String;
 
 
 fn main() {
@@ -13,8 +12,7 @@ fn main() {
 
 
 fn do_thing(a: &mut String) -> &String{
-
-    let  b = String::from("This");
+    let b = String::from("This");
     a.push_str(&b[..]);
     a
 }

@@ -7,7 +7,6 @@ protected:
     int height;
 public:
     Rectangle(int,int);
-    ~Rectangle();
     int area();
     virtual int areaDynamic();
     
