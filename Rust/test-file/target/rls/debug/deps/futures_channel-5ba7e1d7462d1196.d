@@ -1,0 +1,10 @@
+e:\Projects\CS4080\Rust\test-file\target\rls\debug\deps\futures_channel-5ba7e1d7462d1196.rmeta: C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\lib.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\lock.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\mpsc\mod.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\mpsc\queue.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\mpsc\sink_impl.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\oneshot.rs
+
+e:\Projects\CS4080\Rust\test-file\target\rls\debug\deps\futures_channel-5ba7e1d7462d1196.d: C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\lib.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\lock.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\mpsc\mod.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\mpsc\queue.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\mpsc\sink_impl.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\oneshot.rs
+
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\lib.rs:
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\lock.rs:
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\mpsc\mod.rs:
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\mpsc\queue.rs:
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\mpsc\sink_impl.rs:
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.1\src\oneshot.rs:

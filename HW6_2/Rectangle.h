@@ -9,7 +9,6 @@ public:
     Rectangle(int,int);
     int area();
     virtual int areaDynamic();
-    
 };
 
 

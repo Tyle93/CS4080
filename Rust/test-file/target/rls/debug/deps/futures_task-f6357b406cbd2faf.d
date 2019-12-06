@@ -1,0 +1,11 @@
+e:\Projects\CS4080\Rust\test-file\target\rls\debug\deps\futures_task-f6357b406cbd2faf.rmeta: C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\lib.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\spawn.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\future_obj.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\noop_waker.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\arc_wake.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\waker.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\waker_ref.rs
+
+e:\Projects\CS4080\Rust\test-file\target\rls\debug\deps\futures_task-f6357b406cbd2faf.d: C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\lib.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\spawn.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\future_obj.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\noop_waker.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\arc_wake.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\waker.rs C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\waker_ref.rs
+
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\lib.rs:
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\spawn.rs:
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\future_obj.rs:
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\noop_waker.rs:
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\arc_wake.rs:
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\waker.rs:
+C:\Users\pluto\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.1\src\waker_ref.rs:

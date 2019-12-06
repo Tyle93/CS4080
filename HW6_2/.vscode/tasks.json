@@ -1,26 +1,24 @@
 {
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
         {
             "type": "shell",
-            "label": "cl.exe build active file",
-            "command": "cl.exe",
-            "args": [
-                "/Zi",
-                "/EHsc",
-                "/Fe:",
+            "label": "g++.exe build active file",
+            "command": "C:\\cygwin64\\bin\\g++.exe",
+            "args": [          
+                "${fileDirname}\\main.cpp",
+                "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}",
-                "Rectangle.cpp",
-                "Square.cpp"
             ],
+            "options": {
+                "cwd": "C:\\cygwin64\\bin"
+            },
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
         }
     ]
 }

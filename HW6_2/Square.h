@@ -2,6 +2,7 @@
 
 #include "Rectangle.h"
 
+
 class Square : public Rectangle{
     private:
     public:
