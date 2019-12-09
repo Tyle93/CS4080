@@ -1,0 +1,10 @@
+c:\Users\Tyler-Laptop-2\Documents\CS4080\Rust\Server\target\rls\debug\deps\proc_macro2-4869c28d19c794ca.rmeta: C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\lib.rs C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\strnom.rs C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\fallback.rs C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\wrapper.rs
+
+c:\Users\Tyler-Laptop-2\Documents\CS4080\Rust\Server\target\rls\debug\deps\libproc_macro2-4869c28d19c794ca.rlib: C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\lib.rs C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\strnom.rs C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\fallback.rs C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\wrapper.rs
+
+c:\Users\Tyler-Laptop-2\Documents\CS4080\Rust\Server\target\rls\debug\deps\proc_macro2-4869c28d19c794ca.d: C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\lib.rs C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\strnom.rs C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\fallback.rs C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\wrapper.rs
+
+C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\lib.rs:
+C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\strnom.rs:
+C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\fallback.rs:
+C:\Users\Tyler-Laptop-2\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro2-1.0.6\src\wrapper.rs:
