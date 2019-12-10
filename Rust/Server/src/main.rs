@@ -3,12 +3,14 @@ use rayon::prelude::*;
 use std::net::{TcpListener,Incoming,TcpStream};
 use std::io::prelude::*;
 use std::path::PathBuf;
-use std::io::{Read,Write};
+use std::ffi::OsStr;
+use std::io::{Read,Write,BufReader,BufWriter};
 use std::env;
 use std::thread;
 use std::io;
 use std::sync::Mutex;
 use std::fs;
+use std::fs::File;
 use std::path::Path;
 
 enum ReqType{
@@ -28,48 +30,62 @@ impl FileReq{
     }
 }
 
-struct FileSystem{
-    root: String,
-}
-
-impl FileSystem{
-    fn new(root: String) -> FileSystem{
-        FileSystem{
-            root,
-        }
-    }
-}
-
 fn handle_connection(mut stream: TcpStream) -> io::Result<()>{
     let mut buf: [u8; 512] = [0;512];   
     let bytes_read = stream.read(&mut buf)?;
-    stream.write(&buf[0..bytes_read])?;
+    println!("{} bytes Read.", bytes_read);
     let mut args: Vec<String> = Vec::new(); 
     if bytes_read != 0 {
-        process_data(&buf, &mut args);
+        process_data(&buf, &mut args, bytes_read);
         for arg in &args{
-            println!("{}", arg);
+            println!("{}:{}", arg, arg.len());
         }
         match handle_args(&args){
             Ok(req) => match req.req{
                 ReqType::Get() => {
-                    get_file(req)?;
-                    //stream.write("Have some shit nigga".as_bytes()).err().unwrap();
+                    let files:Vec<String> = get_file(req)?;
+                    if files.is_empty() {
+                        stream.write("File not Found.".as_bytes())?;
+                    }else{
+                        'fileLoop: for file in files{
+                            println!("File to open: {}", file);
+                            let mut f: File;
+                            match File::open(file){
+                                Ok(o) => f = o,
+                                Err(e) => {
+                                    println!("Failed to Open File. {}",e);
+                                    continue 'fileLoop; 
+                                }
+                            };
+                            println!("We made it this far!");
+                            let mut buf: Vec<u8> = Vec::new();
+                            f.read_to_end(&mut buf)?;
+                            let mut writer = BufWriter::new(&stream);
+                            writer.write_all(&mut buf)?;
+                        }
+                    }
                 },
                 ReqType::Put() => {
                     put_file(req)?
                 }
             },
-            Err(s) => return Err(stream.write(s.as_bytes()).err().unwrap())
+            Err(s) => respond(s, &mut stream)?
         };
     }
     Ok(())
 }
 
-fn process_data(buf: &[u8;512], args: &mut Vec<String>) {
+fn respond(res: &str, stream: &mut TcpStream) -> io::Result<()>{
+    match stream.write(res.as_bytes()){
+        Ok(n) => return Ok(()),
+        Err(e) => return Err(e),
+    };
+}
+
+fn process_data(buf: &[u8;512], args: &mut Vec<String>, size: usize) {
     let mut arg = String::new();
     if buf.len() > 0{
-        for i in 0..buf.len(){
+        for i in 0..size{
             let temp = buf[i] as char;
             if temp != ' '{
                 arg.push(temp);
@@ -79,9 +95,14 @@ fn process_data(buf: &[u8;512], args: &mut Vec<String>) {
             }
         }
     }else{
-        eprintln!("Buff is fucked");
+        return;
+    }
+    args.push(arg);
+    for a in args{
+        println!("{}:{}",a,a.len())
     }
 }
+
 fn handle_args(args: &Vec<String>) -> Result<FileReq, &str>{
     let rType: ReqType;
     match args[0].as_str(){
@@ -91,19 +112,21 @@ fn handle_args(args: &Vec<String>) -> Result<FileReq, &str>{
     };
     let mut files: Vec<String> = Vec::new();
     for i in 1..args.len(){
-        files.push(String::from(args[i].as_str()));
+        files.push(args[i].to_string());
     }
     Ok(FileReq::new(rType, files))
 }
 
-fn get_file(req: FileReq) -> io::Result<()>{
-    let files = Mutex::new(Vec::<String>::new());
-    req.files.par_iter().for_each(move |file| {
-        let dir = env::current_dir().unwrap().to_str().unwrap().to_string();
-        find_file(dir, &files, file).expect("");
+fn get_file(req: FileReq) -> io::Result<Vec<String>>{
+    let  files = Mutex::new(Vec::<String>::new());
+    req.files.par_iter().for_each(|file| {
+        let mut dir = env::current_dir().unwrap();
+        dir.push("Files");
+        let path = dir.to_str().unwrap().to_string();
+        find_file(path, &files, file).expect("");
     });
-    
-    Ok(())
+    let ret: Vec<String> = files.into_inner().unwrap();
+    Ok(ret)
 }
 fn put_file(req: FileReq) -> io::Result<()>{
     Ok(())
@@ -120,10 +143,17 @@ fn find_file(dir_str: String, files: &Mutex<Vec<String>>, name: &String) -> io::
                 let new_str  = match entry.to_str(){
                     Some(s) => String::from(s),
                     None => String::from(" ")
-                };
-                if new_str.eq(name){
+                }; 
+                for c in name.as_bytes(){
+                    println!("{}",c);
+                }
+                let a = OsStr::new(name);
+                let b = entry.as_path().file_name().unwrap();
+                if a == b{
+                    println!("File Found: {}",new_str);
                     let mut guard = files.lock().unwrap();
-                    guard.push(new_str)
+                    guard.push(new_str);
+                    return Ok(());
                 }        
             }
         }
@@ -137,9 +167,8 @@ fn find_file(dir_str: String, files: &Mutex<Vec<String>>, name: &String) -> io::
     Ok(())
 }
 
-
- fn main() {
-
+fn main() {
+    
     let args = env::args().collect::<Vec<String>>();
     let mut addr = String::from(args[1].as_str());
     addr.push_str(":");
@@ -150,7 +179,10 @@ fn find_file(dir_str: String, files: &Mutex<Vec<String>>, name: &String) -> io::
         match stream{
             Ok(s) => {
                 thread::spawn(move || {
-                    handle_connection(s)
+                    match handle_connection(s){
+                        Ok(a) => (a),
+                        Err(e) => eprintln!("{}",e) 
+                    };
                 });
             },
             Err(e) =>  eprintln!("{:}", e)
